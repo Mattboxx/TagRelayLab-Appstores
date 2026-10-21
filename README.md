@@ -1,6 +1,6 @@
-# TagRelayLab Server
+# TagRelayLab Appstores
 
-**Experimental self-hosted Bluetooth tracker maps, local history and firmware tools.**
+**Public Docker installation catalog and guides for TagRelayLab Server; not the private application source.**
 
 [Support development on Ko-fi](https://ko-fi.com/mattboxx) · [Documentation](docs/README.md) · [Screenshots](docs/screenshots/README.md) · [Install](#installation)
 
@@ -37,6 +37,18 @@ affiliated with Apple or Google; use only devices you own or are authorized to t
 
 Read [scope, privacy and limitations](docs/PROJECT_SCOPE.md) and
 [licenses and corresponding sources](docs/LICENSING.md) before deployment.
+
+### The three TagRelayLab projects
+
+| Repository | Purpose |
+| --- | --- |
+| [TagRelayLab-Server](https://github.com/Mattboxx/TagRelayLab-Server) | Application and providers; source repository currently private. |
+| [TagRelayLab-Appstores](https://github.com/Mattboxx/TagRelayLab-Appstores) | Public Docker installation catalog and illustrated operating guides. |
+| [TagRelayLab-ESP32-Library](https://github.com/Mattboxx/TagRelayLab-ESP32-Library) | Public reusable ESP32 library; its API, include and package remain `FindMyAdv`. |
+
+Every visit starts in **Latest**, loading saved devices in small batches, not complete histories.
+Select a device or enable **History** for saved points on demand. Google analysis runs
+separately, retaining the last reliable position while a result is pending.
 
 [![Illustrated map and history tour with synthetic demonstration data](docs/demos/map-history-tour.gif)](docs/demos/map-history-tour.gif)
 
@@ -145,11 +157,11 @@ For an existing modular deployment or an explicit legacy installation:
 
 ```sh
 mkdir tracking-modular && cd tracking-modular
-curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/v1.1.25/compose.yaml -o compose.yaml
+curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/v1.1.26/compose.yaml -o compose.yaml
 docker compose up -d
 ```
 
-For ZimaOS/CasaOS, add this **JSON source** (TagRelayLab Server), then install TagRelayLab:
+For ZimaOS/CasaOS, add this **JSON source** (TagRelayLab Appstores), then install TagRelayLab:
 
 ```text
 https://cdn.jsdelivr.net/gh/Mattboxx/TagRelayLab-Appstores@gh-pages/store.json
@@ -165,7 +177,7 @@ https://cdn.jsdelivr.net/gh/Mattboxx/TagRelayLab-Appstores@gh-pages/store.json
 Anisette is a separate upstream Apple authentication helper in both layouts.
 Fewer containers do not automatically mean lower memory usage or less account setup.
 
-The bundle is `ghcr.io/mattboxx/tagrelaylab-server`; tags `1.1.25`,
+The bundle is `ghcr.io/mattboxx/tagrelaylab-server`; tags `1.1.26`,
 `stable` and `latest` are available. The legacy name `find-my-hub` stays compatible.
 `find-my-web` is **web-only**, not a bundle alias. Keep the current data mounts,
 ports and Compose project name when changing only an image reference.

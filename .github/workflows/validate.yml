@@ -89,7 +89,7 @@ jobs:
           cache-file: .cache/build_appstore/image-size-cache.json
           digest-cache-file: .cache/build_appstore/image-digest-cache.json
           report-json: out/build-v2-report.json
-          report-title: Validate Find My Hub ZimaOS V2 Catalog
+          report-title: Validate TagRelayLab Appstores ZimaOS V2 Catalog
 
       - name: Verify ZimaOS protocol v2 output
         run: |
@@ -114,9 +114,9 @@ jobs:
         run: |
           set -euo pipefail
           for image in \
-            ghcr.io/mattboxx/find-my-web:1.1.25 \
-            ghcr.io/mattboxx/find-my-apple-provider:1.1.25 \
-            ghcr.io/mattboxx/find-my-google-provider:1.1.25
+            ghcr.io/mattboxx/find-my-web:1.1.26 \
+            ghcr.io/mattboxx/find-my-apple-provider:1.1.26 \
+            ghcr.io/mattboxx/find-my-google-provider:1.1.26
           do
             manifest="$RUNNER_TEMP/$(basename "${image%%:*}").json"
             docker manifest inspect "$image" > "$manifest"
