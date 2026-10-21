@@ -110,30 +110,7 @@ jobs:
             dist/apps/io.github.mattbox03.findmyhub/docker-compose.amd64.yml \
             dist/apps/io.github.mattbox03.findmyhub/docker-compose.arm64.yml
 
-      - name: Verify public multi-architecture images
+      - name: Verify public release images, moving tags and aliases
         run: |
-          set -euo pipefail
-          for image in \
-            ghcr.io/mattboxx/find-my-web:1.1.27 \
-            ghcr.io/mattboxx/find-my-apple-provider:1.1.27 \
-            ghcr.io/mattboxx/find-my-google-provider:1.1.27
-          do
-            manifest="$RUNNER_TEMP/$(basename "${image%%:*}").json"
-            docker manifest inspect "$image" > "$manifest"
-            MANIFEST="$manifest" IMAGE="$image" python3 - <<'PY'
-          import json
-          import os
-          from pathlib import Path
-
-          payload = json.loads(Path(os.environ["MANIFEST"]).read_text())
-          platforms = {
-              ((entry.get("platform") or {}).get("os"), (entry.get("platform") or {}).get("architecture"))
-              for entry in payload.get("manifests", [])
-          }
-          required = {("linux", "amd64"), ("linux", "arm64")}
-          missing = required - platforms
-          if missing:
-              raise SystemExit(f"{os.environ['IMAGE']} is missing {sorted(missing)}")
-          print(f"{os.environ['IMAGE']}: amd64 and arm64 OK")
-          PY
-          done
+          version="$(python3 -c 'import json; print(json.load(open("adapters/runtipi/apps/find-my-hub/config.json", encoding="utf-8"))["version"])')"
+          python3 scripts/verify_release_images.py "$version"
