@@ -10,7 +10,7 @@ firmware tools and configured ESP32 library generation.
 | Application and native store listing | TagRelayLab |
 | Private source repository | TagRelayLab-Server |
 | Public Docker catalog repository | [TagRelayLab-Appstores](https://github.com/Mattboxx/TagRelayLab-Appstores) |
-| Public store title | TagRelayLab Server |
+| Public catalog title | TagRelayLab Appstores |
 | Public ESP32 library repository | [TagRelayLab-ESP32-Library](https://github.com/Mattboxx/TagRelayLab-ESP32-Library) |
 | Library API, includes and package name | FindMyAdv |
 
@@ -39,7 +39,7 @@ clearance. Descriptive compatibility wording is not a certification claim. See
 [project scope](PROJECT_SCOPE.md); experimental intent and optional donations do
 not remove license, privacy or external-service obligations.
 
-Earlier screenshots, release notes and the archived technical reference retain
+Earlier screenshots and historical release notes retain
 the names used when they were recorded. Stable images and immutable catalog
 snapshots keep their original contents; a source branding update does not
 replace an installed image or migrate an installation automatically.

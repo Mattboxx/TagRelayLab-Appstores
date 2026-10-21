@@ -2,8 +2,8 @@
   "version": 2,
   "store_id": "find-my-hub-docker-catalog",
   "name": {
-    "en_US": "TagRelayLab Server",
-    "it_IT": "TagRelayLab Server"
+    "en_US": "TagRelayLab Appstores",
+    "it_IT": "TagRelayLab Appstores"
   },
   "description": {
     "en_US": "Legacy four-container catalog for existing installations. Use All-in-One (two containers) for a new setup. Tracking, firmware and configured ESP32 libraries.",

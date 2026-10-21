@@ -4,7 +4,7 @@ services:
   web:
     container_name: find-my-hub-web
     hostname: find-my-hub-web
-    image: ghcr.io/mattboxx/find-my-web:1.1.25
+    image: ghcr.io/mattboxx/find-my-web:1.1.26
     restart: unless-stopped
     ports:
       - target: 8000
@@ -44,7 +44,7 @@ services:
   apple-provider:
     container_name: find-my-hub-apple-provider
     hostname: apple-provider
-    image: ghcr.io/mattboxx/find-my-apple-provider:1.1.25
+    image: ghcr.io/mattboxx/find-my-apple-provider:1.1.26
     restart: unless-stopped
     environment:
       APPLE_SETUP_PORT: "6177"
@@ -65,7 +65,7 @@ services:
   google-provider:
     container_name: find-my-hub-google-provider
     hostname: google-provider
-    image: ghcr.io/mattboxx/find-my-google-provider:1.1.25
+    image: ghcr.io/mattboxx/find-my-google-provider:1.1.26
     restart: unless-stopped
     environment:
       AUTH_TOKEN: ${GOOGLE_TOKEN:-}
@@ -189,11 +189,11 @@ x-casaos:
   port_map: "8125"
   scheme: http
   index: /
-  version: "1.1.25"
-  update_at: "2026-10-16"
+  version: "1.1.26"
+  update_at: "2026-10-20"
   release_notes:
-    en_US: "Strengthen shared-browser account isolation: clear old keys, maps, reports and prepared downloads on account changes; reject stale requests and imports. Align FindMyAdv metadata and NimBLE 2.x dependency bounds. Preserve volumes, identities and firmware. Reload existing browser tabs after updating."
-    it_IT: "Rafforzato l'isolamento degli account nel browser condiviso: al cambio account vengono rimossi vecchie chiavi, mappe, report e download preparati; richieste e importazioni obsolete sono bloccate. Allineati metadati FindMyAdv e dipendenza NimBLE 2.x. Volumi, identità e firmware invariati. Ricaricare le schede del browser dopo l'aggiornamento."
+    en_US: "Load devices progressively in pages of 50 and fetch history on demand. Start each visit in Latest. Keep Google analysis off the ingestion lock and retain the published reliable position during background updates. Restore the mobile device-list button and align TagRelayLab README names. Volumes, identities and firmware unchanged; reload browser tabs after updating."
+    it_IT: "Caricamento progressivo dei dispositivi in blocchi di 50 e storico su richiesta. Ogni visita parte da Ultime. L'analisi Google non blocca la raccolta dei report e mantiene la posizione affidabile durante gli aggiornamenti in background. Ripristinato il pulsante elenco mobile e allineati i nomi TagRelayLab nei README. Volumi, identità e firmware invariati; ricaricare le schede dopo l'aggiornamento."
   website: https://github.com/Mattboxx/TagRelayLab-Appstores
   repo: https://github.com/Mattboxx/TagRelayLab-Appstores
   support: https://github.com/Mattboxx/TagRelayLab-Appstores/issues

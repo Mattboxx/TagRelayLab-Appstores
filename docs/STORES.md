@@ -3,7 +3,7 @@
 [Project overview](../README.md) · [Installation guide](INSTALLATION.md)
 
 This catalog is the public installation companion to **TagRelayLab
-Server**. The catalog is displayed as **TagRelayLab Server**;
+Server**. The catalog is displayed as **TagRelayLab Appstores**;
 its native app is still named **TagRelayLab**. Store IDs, data paths
 and subscription URLs stay stable; a repository or image rename does not require
 reinstalling the app.
@@ -88,9 +88,9 @@ that catalog's maintainers.
 One-click installation requires anonymous access to these multi-architecture
 images:
 
-- `ghcr.io/mattboxx/find-my-web:1.1.25`
-- `ghcr.io/mattboxx/find-my-apple-provider:1.1.25`
-- `ghcr.io/mattboxx/find-my-google-provider:1.1.25`
+- `ghcr.io/mattboxx/find-my-web:1.1.26`
+- `ghcr.io/mattboxx/find-my-apple-provider:1.1.26`
+- `ghcr.io/mattboxx/find-my-google-provider:1.1.26`
 
 All three images are public and expose `linux/amd64` and `linux/arm64`
 manifests. The CI validates every JSON and Compose manifest, builds the ZimaOS

@@ -123,6 +123,12 @@ e valori già inseriti. La stessa funzione è nelle impostazioni del dispositivo
 
 ## 4. Mappa, storico e intervalli di tempo
 
+Ogni accesso parte da **Ultime**, anche se prima avevi usato Storico. I dispositivi
+salvati compaiono progressivamente in piccoli gruppi. Gli storici completi si
+caricano quando selezioni un dispositivo o attivi esplicitamente Storico, senza
+bloccare la prima mappa. Durante un ricalcolo Google rimane l'ultima posizione
+affidabile: un report raw non confermato non viene promosso soltanto perché nuovo.
+
 **All / Apple / Google** seleziona la sorgente. **Ultime** mostra posizioni recenti;
 **Storico** mostra i punti disponibili e percorsi distinti per provider. Seleziona
 un dispositivo o punto, usa precedente/successivo o lo slider. Sono disponibili
@@ -332,7 +338,7 @@ Per valori predefiniti, limiti, paginazione API e migrazione, leggi
 ## 13. Aggiornamenti e diagnosi
 
 Aggiorna dallo store oppure scarica le immagini Compose versionate e ricrea i
-servizi mantenendo i volumi. `1.1.25` è riproducibile; `latest` segue l'ultima
+servizi mantenendo i volumi. `1.1.26` è riproducibile; `latest` segue l'ultima
 release. Versione store, tag immagini e manifest delle architetture devono
 coincidere. Non reinstallare/cancellare i dati per una cache dello store obsoleta.
 Esegui backup prima di modificare l'installazione.
