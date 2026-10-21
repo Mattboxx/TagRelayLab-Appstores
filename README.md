@@ -140,7 +140,7 @@ Both offer the same web features; existing installations do not migrate automati
 ### All-in-One — fresh Linux server
 
 ```sh
-mkdir apple-google-tracking && cd apple-google-tracking
+mkdir tagrelaylab && cd tagrelaylab
 curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/all-in-one/compose.yaml -o compose.yaml
 mkdir -p data/anisette
 sudo chown 1000:1000 data/anisette

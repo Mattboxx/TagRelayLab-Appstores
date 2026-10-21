@@ -44,7 +44,7 @@ container. This is **not** a one-container installation including Anisette.
 For a fresh Linux server:
 
 ```sh
-mkdir find-my-hub-bundle && cd find-my-hub-bundle
+mkdir tagrelaylab && cd tagrelaylab
 curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/all-in-one/compose.yaml -o compose.yaml
 mkdir -p data/anisette
 sudo chown 1000:1000 data/anisette
@@ -85,7 +85,7 @@ keep this layout; there is no automatic migration.
 If you explicitly need the legacy layout, use an empty folder:
 
 ```sh
-mkdir find-my-hub-modular && cd find-my-hub-modular
+mkdir tagrelaylab-modular && cd tagrelaylab-modular
 curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/v1.1.26/compose.yaml -o compose.yaml
 docker compose up -d
 docker compose ps

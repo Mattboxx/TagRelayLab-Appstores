@@ -34,6 +34,10 @@ nRF52 beacon research repository is not renamed or modified by this migration.
 FindMyAdv remains the technical API/package name and version 1.1.0. Do not change
 include paths or users' firmware APIs to follow a documentation-only rebrand.
 
+Historical `Find_My_Web` contributor credits in library metadata and license
+notices remain attribution, not the current public project title. Do not erase
+those credits or rewrite copyright notices merely to align branding.
+
 TagRelayLab received a preliminary exact-name web search, not formal trademark
 clearance. Descriptive compatibility wording is not a certification claim. See
 [project scope](PROJECT_SCOPE.md); experimental intent and optional donations do
