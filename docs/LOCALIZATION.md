@@ -1,4 +1,4 @@
-# Interface languages and project support / Lingue e sostegno al progetto
+# Interface languages and project support
 
 ## User-facing behavior
 
@@ -24,7 +24,8 @@ protocol names when correcting a translation.
 
 Original EN/IT dictionaries remain in the three HTML pages. `web/i18n.js`
 extends them with `web/translations/{index,flash,flash-esp32}.js`. Bundles cover
-481 main-page keys, 113 Nordic keys and 109 ESP keys at the time of writing.
+every current EN/IT key; tests compare the actual dictionaries rather than a
+fixed documented count.
 Template descriptors preserve function arguments without using runtime `eval`.
 
 For a text correction edit the bundled locale and add the same correction to
@@ -56,6 +57,9 @@ popups, embedded widgets, advertising, payment scripts or restricted features.
 The link uses `noopener`, `noreferrer` and a no-referrer policy. Ko-fi processes
 the donation on its own website; the hub does not collect payment details.
 
+<details>
+<summary>Italian documentation</summary>
+
 ## Italiano
 
 La lingua scelta viene conservata nel browser anche tra sessioni. Sono presenti
@@ -68,3 +72,5 @@ Le istruzioni negli ZIP e la documentazione estesa restano in inglese/italiano.
 
 Il piccolo collegamento Ko-fi in fondo al pannello permette di sostenere
 facoltativamente il progetto senza notifiche, pubblicità o funzioni a pagamento.
+
+</details>

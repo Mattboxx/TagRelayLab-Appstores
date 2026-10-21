@@ -38,7 +38,7 @@ equivalent) is recommended.
 Create an empty installation folder and download this public Compose recipe:
 
 ```sh
-mkdir find-my-hub && cd find-my-hub
+mkdir tagrelaylab && cd tagrelaylab
 curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/all-in-one/compose.yaml -o compose.yaml
 mkdir -p data/anisette
 sudo chown 1000:1000 data/anisette

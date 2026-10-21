@@ -21,3 +21,6 @@ Before merge, validate JSON, Compose variants and the generated ZimaOS catalog
 with the repository CI. Review documentation links and rendered screenshots.
 Only reviewed public guides, synthetic assets and installation metadata belong
 in this repository; the private application repository is maintained separately.
+
+For vulnerabilities, use the [private reporting policy](SECURITY.md), not a
+public issue containing credentials, identities or location data.
