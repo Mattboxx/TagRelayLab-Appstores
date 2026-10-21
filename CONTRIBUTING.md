@@ -24,3 +24,7 @@ in this repository; the private application repository is maintained separately.
 
 For vulnerabilities, use the [private reporting policy](SECURITY.md), not a
 public issue containing credentials, identities or location data.
+
+Every approved new server version must also update this catalog and its published
+store feed. Follow the [release completion gates](AGENTS.md); source/image updates
+alone are not a completed release.
