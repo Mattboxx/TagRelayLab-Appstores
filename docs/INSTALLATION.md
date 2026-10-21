@@ -65,10 +65,10 @@ compatible image name**; existing installations are not broken or forced to move
 
 | Image reference | Meaning |
 | --- | --- |
-| `ghcr.io/mattboxx/find-my-web:1.1.26` | Web only; needs separate/existing providers |
-| `ghcr.io/mattboxx/tagrelaylab-server:1.1.26` | Web + Apple + Google bundle |
+| `ghcr.io/mattboxx/find-my-web:1.1.27` | Web only; needs separate/existing providers |
+| `ghcr.io/mattboxx/tagrelaylab-server:1.1.27` | Web + Apple + Google bundle |
 | `ghcr.io/mattboxx/tagrelaylab-server:stable` or `:latest` | Latest stable bundle |
-| `ghcr.io/mattboxx/find-my-hub:1.1.26` | Legacy name for that same bundled image |
+| `ghcr.io/mattboxx/find-my-hub:1.1.27` | Legacy name for that same bundled image |
 
 Version tags pin a reproducible release. `latest`/`stable` follow future stable
 releases; they do not update a running container by themselves. The modular
@@ -86,7 +86,7 @@ If you explicitly need the legacy layout, use an empty folder:
 
 ```sh
 mkdir tagrelaylab-modular && cd tagrelaylab-modular
-curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/v1.1.26/compose.yaml -o compose.yaml
+curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/v1.1.27/compose.yaml -o compose.yaml
 docker compose up -d
 docker compose ps
 ```

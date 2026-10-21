@@ -30,7 +30,7 @@ the primary documentation language. Screenshots use synthetic demonstration data
 
 ## Releases
 
-Read the [1.1.26 release notes](RELEASE_1.1.26.md) for the current stable release.
+Read the [1.1.27 release notes](RELEASE_1.1.27.md) for the current stable release.
 Earlier notes remain versioned here; they describe historical changes rather
 than the recommended installation procedure. For current commands use the
 installation guide above.
