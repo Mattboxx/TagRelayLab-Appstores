@@ -12,7 +12,7 @@ issues. Include the affected version/digest and a minimal reproduction with
 synthetic data. Ordinary installation questions belong in public issues, with
 all sensitive details removed.
 
-Security fixes target the latest stable release. Old immutable image tags are
-retained for rollback, not recommended for new deployments. The volunteer
+Security fixes target the latest stable release. Only complete 1.1.27 image
+variants are currently retained; older registry versions were removed. The volunteer
 project handles reports on a best-effort basis without a guaranteed response
 deadline; coordinate fixes and disclosure privately.
