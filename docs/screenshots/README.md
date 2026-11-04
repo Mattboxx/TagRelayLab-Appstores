@@ -1,6 +1,22 @@
 # Interface gallery
 
-Screenshots retain the earlier Find My Web / Find My Hub branding; the illustrated workflows still apply.
+Older screenshots retain the earlier Find My Web / Find My Hub branding; the illustrated workflows still apply.
+
+## Liquid Glass development preview
+
+These captures show the unreleased neutral glass interface with synthetic data.
+The mobile controls start collapsed, then open into labeled Map, Map preferences,
+and Tools sections. This is a visual preview, not a new Docker release.
+
+| View | Screenshot |
+| --- | --- |
+| Desktop map and saved history | [Glass history](20-glass-history.png) |
+| Mobile map, menu collapsed | [Collapsed controls](21-mobile-menu-closed.png) |
+| Mobile map, grouped menu expanded | [Expanded controls](22-mobile-menu-open.png) |
+
+![Desktop history with the neutral translucent interface](20-glass-history.png)
+
+## Workflow reference
 
 Captured from application version 1.1.15 and the 1.1.16/1.1.17/1.1.18 feature previews in isolated Docker environments with synthetic
 devices, accounts, identities and locations. No real credentials or personal

@@ -13,6 +13,7 @@ This does not replace or override the licenses of third-party programs.
 | Google provider | [google-find-hub-sync](https://github.com/traccar/google-find-hub-sync), based on [GoogleFindMyTools](https://github.com/leonboe1/GoogleFindMyTools) | GPL-3.0-only |
 | Anisette helper | [anisette-v3-server](https://github.com/Dadoum/anisette-v3-server) | Downloaded separately from its upstream publisher, never embedded in our bundle |
 | Maps | [Leaflet](https://leafletjs.com/) and [OpenStreetMap](https://www.openstreetmap.org/copyright) | Retain their code licenses and map attribution |
+| Map glass styling | [Glisse](https://github.com/0kzh/glisse/tree/46be5ba07b60eb507e887ff338ded7840576a79f) | MIT, Kelvin Zhang; CSS-only adaptation, no React runtime |
 | Network research | [OpenHaystack](https://github.com/seemoo-lab/openhaystack) | Retains its upstream license |
 | Browser SWD tools | [DAP.js](https://github.com/ARMmbed/dapjs) | MIT |
 | Browser serial tools | [esptool-js 0.6.0](https://github.com/espressif/esptool-js/tree/v0.6.0), [esp-web-flasher 5.1.4](https://github.com/NabuCasa/esp-web-flasher/tree/5.1.4) | Apache-2.0 and MIT respectively; pako retains MIT/Zlib notices |
