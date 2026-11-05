@@ -101,7 +101,7 @@ application's purpose and main loop. [Library and integration guide](https://git
 <details>
 <summary>More examples: unified views and Google report analysis</summary>
 
-[![Unified view and original trackers](docs/screenshots/04-unified-view.jpg)](docs/screenshots/04-unified-view.jpg)
+[![Map and history in TagRelayLab 1.1.28](docs/screenshots/20-glass-history.png)](docs/screenshots/20-glass-history.png)
 
 [![Google raw reports and derived classifications](docs/screenshots/18-google-reliable-reports.jpg)](docs/screenshots/18-google-reliable-reports.jpg)
 
@@ -112,7 +112,7 @@ Pending candidates and outliers are classified, not silently removed.
 </details>
 
 The previews show the real interface (earlier branding) with synthetic data or empty keys, with no
-board connected. [19 stills](docs/screenshots/README.md) · [Workflows and limits](docs/WORKFLOWS.md).
+board connected. [Interface gallery](docs/screenshots/README.md) · [Workflows and limits](docs/WORKFLOWS.md).
 
 ## Installation
 
@@ -157,7 +157,7 @@ For an existing modular deployment or an explicit legacy installation:
 
 ```sh
 mkdir tracking-modular && cd tracking-modular
-curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/v1.1.27/compose.yaml -o compose.yaml
+curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/v1.1.28/compose.yaml -o compose.yaml
 docker compose up -d
 ```
 
@@ -177,7 +177,7 @@ https://cdn.jsdelivr.net/gh/Mattboxx/TagRelayLab-Appstores@gh-pages/store.json
 Anisette is a separate upstream Apple authentication helper in both layouts.
 Fewer containers do not automatically mean lower memory usage or less account setup.
 
-The bundle is `ghcr.io/mattboxx/tagrelaylab-server`; tags `1.1.27`,
+The bundle is `ghcr.io/mattboxx/tagrelaylab-server`; tags `1.1.28`,
 `stable` and `latest` are available. The legacy name `find-my-hub` stays compatible.
 `find-my-web` is **web-only**, not a bundle alias. Keep the current data mounts,
 ports and Compose project name when changing only an image reference.

@@ -2,13 +2,12 @@
 
 Older screenshots retain the earlier Find My Web / Find My Hub branding; the illustrated workflows still apply.
 
-## Liquid Glass development preview
+## Translucent map and mobile drawer (1.1.28)
 
-These captures show the unreleased neutral translucent interface with synthetic data.
+These captures show the neutral translucent interface with synthetic data.
 On phones, the outline button at the bottom left opens the device drawer.
 The drawer shows source and history filters, the tracked devices, and, for administrators,
 the account switcher. The down chevron returns to the full map.
-This is a visual preview, not a new Docker release.
 
 | View | Screenshot |
 | --- | --- |

@@ -135,6 +135,13 @@ un dispositivo o punto, usa precedente/successivo o lo slider. Sono disponibili
 sorgente, data dell'avvistamento, data di ricezione, coordinate e accuratezza
 quando presente, copia coordinate e apertura in Google Maps/Apple Maps.
 
+Da mobile, apri il pannello dispositivi con il pulsante in basso a sinistra e
+torna alla mappa intera con la freccia verso il basso. Nel pannello trovi le
+sorgenti, lo storico e i comandi dei dispositivi; in fondo gli amministratori
+possono cambiare account visualizzato. I comandi in alto a destra si aprono a parte.
+
+![Pannello dispositivi su mobile](screenshots/22-mobile-menu-open.png)
+
 ![Navigazione storico da mobile](screenshots/15-mobile-history.jpg)
 
 In **Storico → Periodo** scegli tutto il disponibile, ultime 24 ore, 7 giorni,
@@ -338,7 +345,7 @@ Per valori predefiniti, limiti, paginazione API e migrazione, leggi
 ## 13. Aggiornamenti e diagnosi
 
 Aggiorna dallo store oppure scarica le immagini Compose versionate e ricrea i
-servizi mantenendo i volumi. `1.1.27` è riproducibile; `latest` segue l'ultima
+servizi mantenendo i volumi. `1.1.28` è riproducibile; `latest` segue l'ultima
 release. Versione store, tag immagini e manifest delle architetture devono
 coincidere. Non reinstallare/cancellare i dati per una cache dello store obsoleta.
 Esegui backup prima di modificare l'installazione.

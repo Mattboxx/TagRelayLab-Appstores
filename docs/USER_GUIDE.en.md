@@ -137,6 +137,13 @@ device/marker to navigate with older/newer buttons or the slider. Position detai
 include source, sighting timestamp, received time, coordinates and accuracy when
 available. Copy coordinates or open Google Maps/Apple Maps without editing data.
 
+On mobile, use the lower-left outline button to open the devices drawer and
+the down chevron to return to the full map. The drawer also contains source,
+history and device controls; administrators can switch the viewed account
+from its footer. The top-right map toolbar opens separately.
+
+![Mobile devices drawer](screenshots/22-mobile-menu-open.png)
+
 ![Mobile history navigation](screenshots/15-mobile-history.jpg)
 
 ### Time range (1.1.15)
@@ -339,7 +346,7 @@ For defaults, algorithm limits, API pagination and migration details, read
 ## 13. Update safely and troubleshoot by layer
 
 Use the store update or pull the versioned Compose images and recreate services,
-keeping existing data volumes. `1.1.27` is reproducible; `latest` follows the
+keeping existing data volumes. `1.1.28` is reproducible; `latest` follows the
 latest released image. The store version, image tags and every architecture
 manifest must agree. Do not reinstall/delete data simply because a store has an
 outdated cache. Take backups before changing your installation.

@@ -13,7 +13,7 @@ the primary documentation language. Screenshots use synthetic demonstration data
 | [Installation and operations](INSTALLATION.md) | Recommended All-in-One, legacy modular, first run, backups and migration |
 | [Native stores and panels](STORES.md) | ZimaOS/CasaOS JSON source, Portainer, Umbrel and Runtipi |
 | [Workflow demonstrations](WORKFLOWS.md) | Short walkthroughs with full-size screenshots |
-| [Screenshot gallery](screenshots/README.md) | All 19 interface demonstrations |
+| [Screenshot gallery](screenshots/README.md) | Current map and mobile drawer plus workflow demonstrations |
 | [Animated tours](demos/README.md) | Map/history, Nordic/ESP32 programming, configured libraries and still alternatives |
 | [Google reliable locations](GOOGLE_RELIABLE_LOCATION.md) | Raw archive, derived analysis, classifications and parameters |
 | [Interface languages](LOCALIZATION.md) | Translation scope, persistence and maintenance |
@@ -30,7 +30,7 @@ the primary documentation language. Screenshots use synthetic demonstration data
 
 ## Releases
 
-Read the [1.1.27 release notes](RELEASE_1.1.27.md) for the current stable release.
+Read the [1.1.28 release notes](RELEASE_1.1.28.md) for the current stable release.
 Earlier notes remain versioned here; they describe historical changes rather
 than the recommended installation procedure. For current commands use the
 installation guide above.

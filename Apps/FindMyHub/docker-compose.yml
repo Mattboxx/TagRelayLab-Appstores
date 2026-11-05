@@ -4,7 +4,7 @@ services:
   web:
     container_name: find-my-hub-web
     hostname: find-my-hub-web
-    image: ghcr.io/mattboxx/find-my-web:1.1.27
+    image: ghcr.io/mattboxx/find-my-web:1.1.28
     restart: unless-stopped
     ports:
       - target: 8000
@@ -44,7 +44,7 @@ services:
   apple-provider:
     container_name: find-my-hub-apple-provider
     hostname: apple-provider
-    image: ghcr.io/mattboxx/find-my-apple-provider:1.1.27
+    image: ghcr.io/mattboxx/find-my-apple-provider:1.1.28
     restart: unless-stopped
     environment:
       APPLE_SETUP_PORT: "6177"
@@ -65,7 +65,7 @@ services:
   google-provider:
     container_name: find-my-hub-google-provider
     hostname: google-provider
-    image: ghcr.io/mattboxx/find-my-google-provider:1.1.27
+    image: ghcr.io/mattboxx/find-my-google-provider:1.1.28
     restart: unless-stopped
     environment:
       AUTH_TOKEN: ${GOOGLE_TOKEN:-}
@@ -101,8 +101,11 @@ x-casaos:
   author: Mattboxx
   developer: Mattboxx
   icon: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/Apps/FindMyHub/icon.svg
-  thumbnail: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/02-map.jpg
+  thumbnail: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/20-glass-history.png
   screenshot_link:
+    - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/20-glass-history.png
+    - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/21-mobile-menu-closed.png
+    - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/22-mobile-menu-open.png
     - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/02-map.jpg
     - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/03-history-range.jpg
     - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/04-unified-view.jpg
@@ -189,11 +192,11 @@ x-casaos:
   port_map: "8125"
   scheme: http
   index: /
-  version: "1.1.27"
-  update_at: "2026-10-21"
+  version: "1.1.28"
+  update_at: "2026-11-04"
   release_notes:
-    en_US: "Align installed-app branding, current deployment/security guidance and the downloaded library API reference. Add cross-repository drift checks; preserve progressive loading and the Latest default. Library implementation, API, version 1.1.0, firmware, volumes and identities are unchanged. Reload browser tabs after updating."
-    it_IT: "Allineato il nome dell'app installabile, le guide di installazione e sicurezza e la documentazione API della libreria scaricabile. Aggiunti controlli tra repository; restano caricamento progressivo e vista Ultime predefinita. Implementazione, API e versione 1.1.0 della libreria, firmware, volumi e identità invariati. Ricaricare le schede dopo l'aggiornamento."
+    en_US: "Translucent map controls, a smoother mobile device drawer with larger icons, and paged loading of the complete selected history range. Latest remains the default. Existing volumes, identities and firmware are unchanged. Reload browser tabs after updating."
+    it_IT: "Controlli mappa traslucidi, pannello dispositivi mobile più fluido con icone più grandi e caricamento a pagine di tutto il periodo storico selezionato. Ultime resta la vista predefinita. Volumi, identità e firmware invariati. Ricarica le schede dopo l'aggiornamento."
   website: https://github.com/Mattboxx/TagRelayLab-Appstores
   repo: https://github.com/Mattboxx/TagRelayLab-Appstores
   support: https://github.com/Mattboxx/TagRelayLab-Appstores/issues
