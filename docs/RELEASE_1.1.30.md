@@ -31,6 +31,8 @@
 - Separate the user list and account creation form into labelled tabs. Keep
   long names readable, mobile actions stacked and Close outside the scroll
   region; dialogs follow the visible viewport when space is limited.
+- Keep first-run and sign-in forms scrollable in short/landscape windows,
+  without changing their normal-size appearance.
 - Refresh accessible labels when the language changes. Existing six-language
   bundles, account isolation and original device/identity actions remain intact.
 - Refresh the application and store icons with one muted glass master.
