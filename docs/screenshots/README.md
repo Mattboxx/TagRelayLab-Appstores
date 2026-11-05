@@ -2,6 +2,20 @@
 
 Older screenshots retain the earlier Find My Web / Find My Hub branding; the illustrated workflows still apply.
 
+## Consistent controls and settings (1.1.29)
+
+Real application captures with synthetic accounts and positions. The shared
+neutral theme also covers device settings, administration and firmware tools.
+No real tracker keys or account credentials are shown.
+
+| View | Screenshot |
+| --- | --- |
+| Account and map preferences | [Account](23-account-controls.png) |
+| Provider and automation settings | [Administration](24-settings-controls.png) |
+| Persistent device key labels on mobile | [Device controls](25-mobile-device-controls.png) |
+| ESP32 programming tools | [Firmware controls](26-firmware-controls.png) |
+| Proportioned mobile drawer close control | [Device drawer](27-mobile-drawer-controls.png) |
+
 ## Translucent map and mobile drawer (1.1.28)
 
 These captures show the neutral translucent interface with synthetic data.

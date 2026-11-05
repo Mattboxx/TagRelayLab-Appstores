@@ -123,6 +123,12 @@ e valori già inseriti. La stessa funzione è nelle impostazioni del dispositivo
 
 ## 4. Mappa, storico e intervalli di tempo
 
+Impostazioni, finestre account
+e strumenti firmware condividono controlli neutri e icone di contorno. I campi
+delle chiavi hanno etichette persistenti: la matita li sblocca e la spunta li
+riblocca prima del salvataggio. La chiusura del pannello mobile ha un'area di
+tocco più grande del piccolo cerchio visibile.
+
 Ogni accesso parte da **Ultime**, anche se prima avevi usato Storico. I dispositivi
 salvati compaiono progressivamente in piccoli gruppi. Gli storici completi si
 caricano quando selezioni un dispositivo o attivi esplicitamente Storico, senza
@@ -345,7 +351,7 @@ Per valori predefiniti, limiti, paginazione API e migrazione, leggi
 ## 13. Aggiornamenti e diagnosi
 
 Aggiorna dallo store oppure scarica le immagini Compose versionate e ricrea i
-servizi mantenendo i volumi. `1.1.28` è riproducibile; `latest` segue l'ultima
+servizi mantenendo i volumi. `1.1.29` è riproducibile; `latest` segue l'ultima
 release. Versione store, tag immagini e manifest delle architetture devono
 coincidere. Non reinstallare/cancellare i dati per una cache dello store obsoleta.
 Esegui backup prima di modificare l'installazione.
