@@ -37,6 +37,13 @@
 
 ## Verification and update
 
+Static HTML, CSS, JavaScript and other text assets are precompressed at Docker
+build time and negotiated as gzip for compatible clients. Decompression restores
+the exact original bytes: no styling, graphics, animation or function is removed.
+Original files, ETag revalidation and range requests remain supported. APIs and
+personalized exports are excluded; there is no extra runtime compressor or
+dependency. The maintainer-only icon master is excluded from the runtime image.
+
 Responsive checks cover 320/390 px phones, 672/1024 px intermediate layouts,
 1440 px desktop and 844×390 landscape, plus a 320×380 reduced-height dialog.
 Automated coverage includes history ranges, raw/reliable Google separation,
@@ -47,7 +54,7 @@ See the [updated screenshot gallery](screenshots/README.md).
 Back up data, pull 1.1.30 and recreate the existing services with the same volumes.
 Reload browser tabs after updating. No tracker registration, firmware flashing,
 key rotation, data migration or ESP32 library upgrade is required. Provider
-logic and working firmware are unchanged by this interface release.
+and location-processing logic and working firmware are unchanged by this release.
 All-in-One still needs the separate upstream Anisette container. Existing
 versioned image tags and compatibility names are preserved.
 
