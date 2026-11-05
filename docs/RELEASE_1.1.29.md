@@ -12,6 +12,8 @@
 - Refine the devices drawer's grip and close button: a compact 32 px visual
   control retains a 44 px touch target.
 - Match the application and store icons to the neutral glass style.
+- Use clear neutral glass for the Account dialog, with Log out and Change
+  password above the separate full-width Close action.
 - Guard accidental mobile document zoom in settings and dialogs, while keeping
   Leaflet's own pinch, double-tap and button zoom separate.
 
