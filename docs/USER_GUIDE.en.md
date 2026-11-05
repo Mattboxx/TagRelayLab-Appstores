@@ -125,6 +125,11 @@ prefilled. The same links are available in each device's settings.
 
 ## 4. Map, source filters and position details
 
+Settings, account dialogs and programming tools share neutral controls and
+outline icons. Device key fields have persistent labels; tap the pencil to
+unlock a field and the check mark to lock it again before saving. A small visual
+close button on the mobile device drawer retains a larger touch area.
+
 Every visit starts in **Latest**, even if the previous visit used History.
 Saved devices appear progressively in small batches. Full histories are fetched
 when you select a device or explicitly enable History, not before the first map
@@ -346,7 +351,7 @@ For defaults, algorithm limits, API pagination and migration details, read
 ## 13. Update safely and troubleshoot by layer
 
 Use the store update or pull the versioned Compose images and recreate services,
-keeping existing data volumes. `1.1.28` is reproducible; `latest` follows the
+keeping existing data volumes. `1.1.29` is reproducible; `latest` follows the
 latest released image. The store version, image tags and every architecture
 manifest must agree. Do not reinstall/delete data simply because a store has an
 outdated cache. Take backups before changing your installation.

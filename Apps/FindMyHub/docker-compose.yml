@@ -4,7 +4,7 @@ services:
   web:
     container_name: find-my-hub-web
     hostname: find-my-hub-web
-    image: ghcr.io/mattboxx/find-my-web:1.1.28
+    image: ghcr.io/mattboxx/find-my-web:1.1.29
     restart: unless-stopped
     ports:
       - target: 8000
@@ -44,7 +44,7 @@ services:
   apple-provider:
     container_name: find-my-hub-apple-provider
     hostname: apple-provider
-    image: ghcr.io/mattboxx/find-my-apple-provider:1.1.28
+    image: ghcr.io/mattboxx/find-my-apple-provider:1.1.29
     restart: unless-stopped
     environment:
       APPLE_SETUP_PORT: "6177"
@@ -65,7 +65,7 @@ services:
   google-provider:
     container_name: find-my-hub-google-provider
     hostname: google-provider
-    image: ghcr.io/mattboxx/find-my-google-provider:1.1.28
+    image: ghcr.io/mattboxx/find-my-google-provider:1.1.29
     restart: unless-stopped
     environment:
       AUTH_TOKEN: ${GOOGLE_TOKEN:-}
@@ -100,9 +100,11 @@ x-casaos:
   category: Home
   author: Mattboxx
   developer: Mattboxx
-  icon: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/Apps/FindMyHub/icon.svg
+  icon: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/Apps/FindMyHub/icon.svg?v=1.1.29
   thumbnail: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/20-glass-history.png
   screenshot_link:
+    - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/24-settings-controls.png
+    - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/27-mobile-drawer-controls.png
     - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/20-glass-history.png
     - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/21-mobile-menu-closed.png
     - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/22-mobile-menu-open.png
@@ -192,11 +194,11 @@ x-casaos:
   port_map: "8125"
   scheme: http
   index: /
-  version: "1.1.28"
-  update_at: "2026-11-04"
+  version: "1.1.29"
+  update_at: "2026-11-05"
   release_notes:
-    en_US: "Translucent map controls, a smoother mobile device drawer with larger icons, and paged loading of the complete selected history range. Latest remains the default. Existing volumes, identities and firmware are unchanged. Reload browser tabs after updating."
-    it_IT: "Controlli mappa traslucidi, pannello dispositivi mobile più fluido con icone più grandi e caricamento a pagine di tutto il periodo storico selezionato. Ultime resta la vista predefinita. Volumi, identità e firmware invariati. Ricarica le schede dopo l'aggiornamento."
+    en_US: "Consistent neutral settings, local SVG action icons, readable device key labels and refreshed application/store icons. Map refreshes reuse unchanged markers and avoid repeated recentering. Refined mobile drawer grip and close control. Reports, identities, volumes, firmware and library version are preserved. Reload browser tabs."
+    it_IT: "Impostazioni neutre coerenti, icone SVG locali, etichette leggibili delle chiavi e nuova icona app/store. La mappa riusa i punti invariati senza ricentrarsi a ogni aggiornamento. Migliorate maniglia e chiusura del pannello mobile. Report, identità, volumi, firmware e versione libreria invariati. Ricarica le schede."
   website: https://github.com/Mattboxx/TagRelayLab-Appstores
   repo: https://github.com/Mattboxx/TagRelayLab-Appstores
   support: https://github.com/Mattboxx/TagRelayLab-Appstores/issues

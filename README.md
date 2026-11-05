@@ -101,7 +101,7 @@ application's purpose and main loop. [Library and integration guide](https://git
 <details>
 <summary>More examples: unified views and Google report analysis</summary>
 
-[![Map and history in TagRelayLab 1.1.28](docs/screenshots/20-glass-history.png)](docs/screenshots/20-glass-history.png)
+[![Consistent settings in TagRelayLab 1.1.29](docs/screenshots/24-settings-controls.png)](docs/screenshots/24-settings-controls.png)
 
 [![Google raw reports and derived classifications](docs/screenshots/18-google-reliable-reports.jpg)](docs/screenshots/18-google-reliable-reports.jpg)
 
@@ -157,7 +157,7 @@ For an existing modular deployment or an explicit legacy installation:
 
 ```sh
 mkdir tracking-modular && cd tracking-modular
-curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/v1.1.28/compose.yaml -o compose.yaml
+curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/v1.1.29/compose.yaml -o compose.yaml
 docker compose up -d
 ```
 
@@ -177,7 +177,7 @@ https://cdn.jsdelivr.net/gh/Mattboxx/TagRelayLab-Appstores@gh-pages/store.json
 Anisette is a separate upstream Apple authentication helper in both layouts.
 Fewer containers do not automatically mean lower memory usage or less account setup.
 
-The bundle is `ghcr.io/mattboxx/tagrelaylab-server`; tags `1.1.28`,
+The bundle is `ghcr.io/mattboxx/tagrelaylab-server`; tags `1.1.29`,
 `stable` and `latest` are available. The legacy name `find-my-hub` stays compatible.
 `find-my-web` is **web-only**, not a bundle alias. Keep the current data mounts,
 ports and Compose project name when changing only an image reference.
