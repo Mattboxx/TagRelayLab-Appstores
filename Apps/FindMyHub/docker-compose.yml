@@ -4,7 +4,7 @@ services:
   web:
     container_name: find-my-hub-web
     hostname: find-my-hub-web
-    image: ghcr.io/mattboxx/find-my-web:1.1.29
+    image: ghcr.io/mattboxx/find-my-web:1.1.30
     restart: unless-stopped
     ports:
       - target: 8000
@@ -44,7 +44,7 @@ services:
   apple-provider:
     container_name: find-my-hub-apple-provider
     hostname: apple-provider
-    image: ghcr.io/mattboxx/find-my-apple-provider:1.1.29
+    image: ghcr.io/mattboxx/find-my-apple-provider:1.1.30
     restart: unless-stopped
     environment:
       APPLE_SETUP_PORT: "6177"
@@ -65,7 +65,7 @@ services:
   google-provider:
     container_name: find-my-hub-google-provider
     hostname: google-provider
-    image: ghcr.io/mattboxx/find-my-google-provider:1.1.29
+    image: ghcr.io/mattboxx/find-my-google-provider:1.1.30
     restart: unless-stopped
     environment:
       AUTH_TOKEN: ${GOOGLE_TOKEN:-}
@@ -100,9 +100,14 @@ x-casaos:
   category: Home
   author: Mattboxx
   developer: Mattboxx
-  icon: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/Apps/FindMyHub/icon.svg?v=1.1.29
-  thumbnail: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/20-glass-history.png
+  icon: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/Apps/FindMyHub/icon.svg?v=1.1.30
+  thumbnail: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/30-map-glass.png
   screenshot_link:
+    - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/30-map-glass.png
+    - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/31-accounts-mobile.png
+    - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/32-history-mobile.png
+    - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/33-admin-glass.png
+    - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/34-esp32-glass.png
     - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/24-settings-controls.png
     - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/27-mobile-drawer-controls.png
     - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/20-glass-history.png
@@ -194,7 +199,7 @@ x-casaos:
   port_map: "8125"
   scheme: http
   index: /
-  version: "1.1.29"
+  version: "1.1.30"
   update_at: "2026-11-05"
   release_notes:
     en_US: "Consistent neutral settings, local SVG action icons, readable device key labels and refreshed application/store icons. Map refreshes reuse unchanged markers and avoid repeated recentering. Refined mobile drawer grip and close control. Reports, identities, volumes, firmware and library version are preserved. Reload browser tabs."

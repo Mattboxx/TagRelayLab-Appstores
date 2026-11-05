@@ -2,6 +2,22 @@
 
 Older screenshots retain the earlier Find My Web / Find My Hub branding; the illustrated workflows still apply.
 
+## Readable glass and responsive navigation (1.1.30)
+
+Real captures from the release candidate, using only synthetic accounts and
+Milan demonstration positions. Provider connections are deliberately unset;
+these images illustrate the interface, not live network tracking.
+
+| View | Screenshot |
+| --- | --- |
+| Centered toolbar and compact device tools | [Desktop map](30-map-glass.png) |
+| Separate, scrollable mobile account creation | [Accounts](31-accounts-mobile.png) |
+| Ordered history controls without overlapping metadata | [Mobile history](32-history-mobile.png) |
+| Administration with restrained colored glass and left-hand return | [Administration](33-admin-glass.png) |
+| Consistent programming controls and page navigation | [ESP32 flasher](34-esp32-glass.png) |
+
+![Current desktop map](30-map-glass.png)
+
 ## Consistent controls and settings (1.1.29)
 
 Real application captures with synthetic accounts and positions. The shared
