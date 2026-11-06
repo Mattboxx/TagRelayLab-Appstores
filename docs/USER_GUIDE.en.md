@@ -58,12 +58,17 @@ the interface beyond localhost or your trusted network.
 
 ![Sign-in screen](screenshots/01-login.jpg)
 
+While the server verifies a session during navigation, a neutral loading screen
+is shown instead of briefly flashing the sign-in form. The login form appears
+only if sign-in is needed; an unavailable backend still shows an explicit error.
+
 The language selector offers English, Italian, Spanish, French, Russian and
 Simplified Chinese and remembers the choice across browser sessions.
 The map toolbar keeps **More (three dots), Administration, Location and Refresh**
 available in that order; Administration is visible only to administrators.
-More opens the account/language panel and direct Nordic/ESP32 firmware links.
-Choose **Map appearance** there or in **Account → Map preferences**: Standard,
+More opens account/language controls, **Default source** (All, Apple or Google),
+**Map appearance** and direct Nordic/ESP32 firmware links. Map preferences live
+only in this menu, not in Account. Choose a color style: Standard,
 Light, Dark or System. The choice is saved per account in this browser. These
 are local color styles of the existing OpenStreetMap tiles, not satellite
 imagery or a new provider; marker colors and stored positions are unchanged.
@@ -76,6 +81,14 @@ area above the controls. Location permission for **Show my position** is optiona
 Pulling the grip down moves the whole sheet rather than shrinking its contents.
 A short pull returns it to place; a deliberate pull/flick dismisses it and then
 reveals the corner reopen button.
+The gesture uses captured pointers and frame-bounded updates. Grabbing a moving
+sheet continues from its visible position; release never restarts its opening
+animation. Touch reorder buttons remain square in phone and tablet layouts.
+
+The device's settings icon opens its detailed position history first. Expand
+**Device details and settings** to edit it. For a unified view, the selector
+above history switches between the combined history and each original device;
+expanded settings follow that selection. No keys, devices or positions are merged.
 
 At the bottom of the panel, a discreet **Support on Ko-fi** link opens the
 donation page directly if you wish to support the project. It is optional and
@@ -368,7 +381,7 @@ For defaults, algorithm limits, API pagination and migration details, read
 ## 13. Update safely and troubleshoot by layer
 
 Use the store update or pull the versioned Compose images and recreate services,
-keeping existing data volumes. `1.1.32` is reproducible; `latest` follows the
+keeping existing data volumes. `1.1.33` is reproducible; `latest` follows the
 latest released image. The store version, image tags and every architecture
 manifest must agree. Do not reinstall/delete data simply because a store has an
 outdated cache. Take backups before changing your installation.

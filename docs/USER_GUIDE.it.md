@@ -69,13 +69,27 @@ Trascinando la maniglia verso il basso si muove tutto il pannello, senza
 schiacciare il contenuto. Un gesto breve torna in posizione; un trascinamento
 deciso o rapido chiude l'elenco e poi fa riapparire il pulsante nell'angolo.
 
+Durante il cambio pagina, mentre viene verificata la sessione, appare soltanto
+un caricamento neutro: il modulo di accesso compare solo se necessario. Se il
+backend non risponde, l'errore resta esplicito.
+
 La barra mantiene **Altro (tre puntini), Amministrazione, Posizione e Aggiorna**
 in quest'ordine; Amministrazione è visibile soltanto agli amministratori.
-Altro apre account, lingua e collegamenti ai flasher Nordic/ESP32. Scegli
-**Aspetto mappa** qui oppure in **Account → Preferenze mappa**: Standard, Chiaro,
+Altro contiene account, lingua, **Sorgente predefinita** (Tutti, Apple o Google),
+**Aspetto mappa** e collegamenti ai flasher Nordic/ESP32. Le preferenze mappa
+sono soltanto qui, non in Account. Gli stili disponibili sono Standard, Chiaro,
 Scuro o Automatico. La scelta si salva per account in questo browser. Sono stili
 colore della stessa cartografia OpenStreetMap, non immagini satellitari o un
 nuovo provider; colori dei dispositivi e posizioni memorizzate non cambiano.
+Il gesto dell'elenco aggiorna il disegno una volta per fotogramma e segue il
+contatto anche fuori dalla maniglia. Se riprendi un pannello in movimento,
+continua dalla posizione visibile senza riavviare l'animazione di apertura.
+I pulsanti di riordino mantengono proporzioni quadrate su telefoni e tablet.
+
+L'ingranaggio del dispositivo apre prima la cronologia dettagliata. Espandi
+**Dettagli e impostazioni** per modificarlo. Nelle viste unificate il selettore
+sopra lo storico permette di scegliere vista completa o un dispositivo originale;
+anche le impostazioni seguono la scelta. Chiavi, dispositivi e posizioni restano separati.
 
 ![Aspetto mappa e comandi secondari](screenshots/36-map-appearance.jpg)
 
@@ -368,7 +382,7 @@ Per valori predefiniti, limiti, paginazione API e migrazione, leggi
 ## 13. Aggiornamenti e diagnosi
 
 Aggiorna dallo store oppure scarica le immagini Compose versionate e ricrea i
-servizi mantenendo i volumi. `1.1.32` è riproducibile; `latest` segue l'ultima
+servizi mantenendo i volumi. `1.1.33` è riproducibile; `latest` segue l'ultima
 release. Versione store, tag immagini e manifest delle architetture devono
 coincidere. Non reinstallare/cancellare i dati per una cache dello store obsoleta.
 Esegui backup prima di modificare l'installazione.
