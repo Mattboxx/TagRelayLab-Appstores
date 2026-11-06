@@ -173,6 +173,10 @@ I campi delle chiavi sono bloccati fino al clic sulla matita. Solo l'admin può
 assegnare il proprietario. Eliminazione e sostituzione dell'identità sono azioni
 diverse: leggi le rispettive conferme.
 
+Per una vista unificata, il tasto impostazioni della lista apre il primo membro
+originale. Il selettore in alto passa tra ciascun dispositivo originale e la vista
+unificata. Da telefono scorri dentro il pannello per raggiungere tutte le sezioni.
+
 ![Impostazioni di un dispositivo originale della vista unificata](screenshots/05-device-settings.jpg)
 
 L'occhio nasconde dalla mappa senza eliminare. **Mostra nascosti** controlla
@@ -351,7 +355,7 @@ Per valori predefiniti, limiti, paginazione API e migrazione, leggi
 ## 13. Aggiornamenti e diagnosi
 
 Aggiorna dallo store oppure scarica le immagini Compose versionate e ricrea i
-servizi mantenendo i volumi. `1.1.30` è riproducibile; `latest` segue l'ultima
+servizi mantenendo i volumi. `1.1.31` è riproducibile; `latest` segue l'ultima
 release. Versione store, tag immagini e manifest delle architetture devono
 coincidere. Non reinstallare/cancellare i dati per una cache dello store obsoleta.
 Esegui backup prima di modificare l'installazione.

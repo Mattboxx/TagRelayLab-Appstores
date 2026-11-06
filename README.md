@@ -101,6 +101,8 @@ application's purpose and main loop. [Library and integration guide](https://git
 <details>
 <summary>More examples: unified views and Google report analysis</summary>
 
+[![Black glass sign-in in TagRelayLab 1.1.31](docs/screenshots/35-login-glass.jpg)](docs/screenshots/35-login-glass.jpg)
+
 [![Readable glass settings in TagRelayLab 1.1.30](docs/screenshots/33-admin-glass.png)](docs/screenshots/33-admin-glass.png)
 
 [![Google raw reports and derived classifications](docs/screenshots/18-google-reliable-reports.jpg)](docs/screenshots/18-google-reliable-reports.jpg)
@@ -157,7 +159,7 @@ For an existing modular deployment or an explicit legacy installation:
 
 ```sh
 mkdir tracking-modular && cd tracking-modular
-curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/v1.1.30/compose.yaml -o compose.yaml
+curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/v1.1.31/compose.yaml -o compose.yaml
 docker compose up -d
 ```
 
@@ -177,7 +179,7 @@ https://cdn.jsdelivr.net/gh/Mattboxx/TagRelayLab-Appstores@gh-pages/store.json
 Anisette is a separate upstream Apple authentication helper in both layouts.
 Fewer containers do not automatically mean lower memory usage or less account setup.
 
-The bundle is `ghcr.io/mattboxx/tagrelaylab-server`; tags `1.1.30`,
+The bundle is `ghcr.io/mattboxx/tagrelaylab-server`; tags `1.1.31`,
 `stable` and `latest` are available. The legacy name `find-my-hub` stays compatible.
 `find-my-web` is **web-only**, not a bundle alias. Keep the current data mounts,
 ports and Compose project name when changing only an image reference.
@@ -244,6 +246,5 @@ Built on [macless-haystack](https://github.com/dchristl/macless-haystack),
 Leaflet and OpenStreetMap. Third-party projects retain their own licenses.
 [Full upstream acknowledgements](ACKNOWLEDGEMENTS.md) · [License and source notices](docs/LICENSING.md).
 
-If TagRelayLab helps you, consider [buying me a coffee on Ko-fi](https://ko-fi.com/mattboxx)
-to support continued maintenance, clearer guides and new improvements.
+If TagRelayLab helps you, consider [buying me a coffee on Ko-fi](https://ko-fi.com/mattboxx) to support continued maintenance, clearer guides and new improvements.
 Donations are optional; every feature remains available without donating.
