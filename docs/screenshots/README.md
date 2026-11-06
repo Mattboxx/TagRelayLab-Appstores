@@ -2,6 +2,16 @@
 
 Older screenshots retain the earlier Find My Web / Find My Hub branding; the illustrated workflows still apply.
 
+## History-first details and quick preferences (1.1.33)
+
+The device gear opens history before settings. Unified views offer the combined
+history and each original tracker in the visible selector; settings follow the
+selection. More contains the default source and map appearance, without duplicate
+Account controls. Screens below use synthetic data.
+
+![Unified history with settings collapsed](38-history-first.jpg)
+![Default source and map appearance in More](39-map-preferences.jpg)
+
 ## Map appearance and persistent controls (1.1.32)
 
 Real application captures with synthetic demonstration positions. More,

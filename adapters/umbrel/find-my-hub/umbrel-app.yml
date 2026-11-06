@@ -2,7 +2,7 @@ manifestVersion: 1
 id: find-my-hub
 category: automation
 name: TagRelayLab
-version: "1.1.32"
+version: "1.1.33"
 tagline: One map for Apple Find My and Google Find Hub trackers
 description: >-
   A self-hosted multi-user tracking hub for personal Apple Find My and Google
@@ -19,6 +19,8 @@ repo: https://github.com/Mattboxx/TagRelayLab-Appstores
 support: https://github.com/Mattboxx/TagRelayLab-Appstores/issues
 port: 8125
 gallery:
+  - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/38-history-first.jpg
+  - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/39-map-preferences.jpg
   - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/37-map-toolbar.jpg
   - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/36-map-appearance.jpg
   - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/35-login-glass.jpg
