@@ -16,6 +16,10 @@
   its current position without fading, shrinking its content or resetting its
   height during the exit. Support a deliberate flick, snap short pulls back,
   handle cancelled touches and reveal the corner reopen button only afterwards.
+- Match device reorder controls to the glass interface: centered outline
+  chevrons, a paired pill, directional hover and press feedback, visible focus,
+  disabled end stops and 44-pixel mobile touch targets. Reordering still moves
+  one position at a time and respects reduced-motion preferences.
 - Add **Standard, Light, Dark and System** color styles to quick controls and
   Account → Map preferences. Save the choice per account in the current browser;
   System follows the browser color-scheme preference. Logout resets visible
