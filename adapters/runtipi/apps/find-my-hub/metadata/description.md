@@ -9,6 +9,12 @@ replace the built-in map or make external integrations mandatory.
 
 ![Black glass sign-in](https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/35-login-glass.jpg)
 
+The primary map toolbar stays available, with secondary account/language/firmware
+controls in an animated glass panel. Choose a per-account Standard, Light, Dark
+or System color style without adding another tile provider or API key.
+
+![Map appearance](https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/36-map-appearance.jpg)
+
 [English illustrated guide](https://github.com/Mattboxx/TagRelayLab-Appstores/blob/main/docs/USER_GUIDE.en.md) ·
 [Guida italiana](https://github.com/Mattboxx/TagRelayLab-Appstores/blob/main/docs/USER_GUIDE.it.md) ·
 [Full gallery](https://github.com/Mattboxx/TagRelayLab-Appstores/blob/main/docs/screenshots/README.md).

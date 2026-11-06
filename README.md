@@ -66,7 +66,7 @@ of replacing its main application.
 
 | Capability | What it means |
 | --- | --- |
-| One map, two networks | View Apple, Google or both sources without switching apps. |
+| One map, two networks | View Apple, Google or both; choose a saved map color style and keep primary controls available. |
 | Local history | Browse past reports, select a date/time range and inspect each point. |
 | Reliable Google locations | Compare Optimized, Raw and Both views; retain original reports. |
 | Reversible unified views | Display several trackers as one object without merging or deleting identities. |
@@ -101,7 +101,7 @@ application's purpose and main loop. [Library and integration guide](https://git
 <details>
 <summary>More examples: unified views and Google report analysis</summary>
 
-[![Black glass sign-in in TagRelayLab 1.1.31](docs/screenshots/35-login-glass.jpg)](docs/screenshots/35-login-glass.jpg)
+[![Map appearance and persistent toolbar in TagRelayLab 1.1.32](docs/screenshots/36-map-appearance.jpg)](docs/screenshots/36-map-appearance.jpg)
 
 [![Readable glass settings in TagRelayLab 1.1.30](docs/screenshots/33-admin-glass.png)](docs/screenshots/33-admin-glass.png)
 
@@ -159,7 +159,7 @@ For an existing modular deployment or an explicit legacy installation:
 
 ```sh
 mkdir tracking-modular && cd tracking-modular
-curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/v1.1.31/compose.yaml -o compose.yaml
+curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/v1.1.32/compose.yaml -o compose.yaml
 docker compose up -d
 ```
 
@@ -179,7 +179,7 @@ https://cdn.jsdelivr.net/gh/Mattboxx/TagRelayLab-Appstores@gh-pages/store.json
 Anisette is a separate upstream Apple authentication helper in both layouts.
 Fewer containers do not automatically mean lower memory usage or less account setup.
 
-The bundle is `ghcr.io/mattboxx/tagrelaylab-server`; tags `1.1.31`,
+The bundle is `ghcr.io/mattboxx/tagrelaylab-server`; tags `1.1.32`,
 `stable` and `latest` are available. The legacy name `find-my-hub` stays compatible.
 `find-my-web` is **web-only**, not a bundle alias. Keep the current data mounts,
 ports and Compose project name when changing only an image reference.
