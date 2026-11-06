@@ -61,10 +61,20 @@ su una LAN/VPN fidata. Usa HTTPS per accessi fuori da localhost/rete fidata.
 ![Accesso](screenshots/01-login.jpg)
 
 Il selettore offre inglese, italiano, spagnolo, francese, russo e cinese
-semplificato e conserva la scelta nel browser tra sessioni. Da mobile il blocco note apre
+semplificato e conserva la scelta nel browser tra sessioni. Da mobile il tasto elenco apre
 la lista, la maniglia permette di espanderla e la freccia di richiuderla. Il
 centraggio mantiene il punto nella mappa visibile sopra i controlli. Il permesso
 di geolocalizzazione per **Mostra la mia posizione** è facoltativo.
+
+La barra mantiene **Altro (tre puntini), Amministrazione, Posizione e Aggiorna**
+in quest'ordine; Amministrazione è visibile soltanto agli amministratori.
+Altro apre account, lingua e collegamenti ai flasher Nordic/ESP32. Scegli
+**Aspetto mappa** qui oppure in **Account → Preferenze mappa**: Standard, Chiaro,
+Scuro o Automatico. La scelta si salva per account in questo browser. Sono stili
+colore della stessa cartografia OpenStreetMap, non immagini satellitari o un
+nuovo provider; colori dei dispositivi e posizioni memorizzate non cambiano.
+
+![Aspetto mappa e comandi secondari](screenshots/36-map-appearance.jpg)
 
 In fondo al pannello un piccolo collegamento **Sostieni su Ko-fi** apre subito
 la pagina per una donazione facoltativa, senza promemoria e senza limitare le
@@ -355,7 +365,7 @@ Per valori predefiniti, limiti, paginazione API e migrazione, leggi
 ## 13. Aggiornamenti e diagnosi
 
 Aggiorna dallo store oppure scarica le immagini Compose versionate e ricrea i
-servizi mantenendo i volumi. `1.1.31` è riproducibile; `latest` segue l'ultima
+servizi mantenendo i volumi. `1.1.32` è riproducibile; `latest` segue l'ultima
 release. Versione store, tag immagini e manifest delle architetture devono
 coincidere. Non reinstallare/cancellare i dati per una cache dello store obsoleta.
 Esegui backup prima di modificare l'installazione.

@@ -60,7 +60,17 @@ the interface beyond localhost or your trusted network.
 
 The language selector offers English, Italian, Spanish, French, Russian and
 Simplified Chinese and remembers the choice across browser sessions.
-On mobile, the notepad button opens the device sheet; its handle expands it and
+The map toolbar keeps **More (three dots), Administration, Location and Refresh**
+available in that order; Administration is visible only to administrators.
+More opens the account/language panel and direct Nordic/ESP32 firmware links.
+Choose **Map appearance** there or in **Account → Map preferences**: Standard,
+Light, Dark or System. The choice is saved per account in this browser. These
+are local color styles of the existing OpenStreetMap tiles, not satellite
+imagery or a new provider; marker colors and stored positions are unchanged.
+
+![Map appearance and secondary controls](screenshots/36-map-appearance.jpg)
+
+On mobile, the corner list button opens the device sheet; its handle expands it and
 the chevron closes it. Selecting a device keeps its marker in the visible map
 area above the controls. Location permission for **Show my position** is optional.
 
@@ -355,7 +365,7 @@ For defaults, algorithm limits, API pagination and migration details, read
 ## 13. Update safely and troubleshoot by layer
 
 Use the store update or pull the versioned Compose images and recreate services,
-keeping existing data volumes. `1.1.31` is reproducible; `latest` follows the
+keeping existing data volumes. `1.1.32` is reproducible; `latest` follows the
 latest released image. The store version, image tags and every architecture
 manifest must agree. Do not reinstall/delete data simply because a store has an
 outdated cache. Take backups before changing your installation.

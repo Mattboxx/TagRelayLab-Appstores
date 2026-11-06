@@ -2,6 +2,21 @@
 
 Older screenshots retain the earlier Find My Web / Find My Hub branding; the illustrated workflows still apply.
 
+## Map appearance and persistent controls (1.1.32)
+
+Real application captures with synthetic demonstration positions. More,
+Administration, Location and Refresh stay accessible. The secondary panel
+contains account, language, appearance and firmware links.
+
+| View | Screenshot |
+| --- | --- |
+| Glass secondary panel and dark tile color style | [Map appearance](36-map-appearance.jpg) |
+| Closed panel with all primary controls available | [Persistent toolbar](37-map-toolbar.jpg) |
+
+Light, Dark and System are local color treatments of the same OpenStreetMap
+tiles, not satellite imagery or a different cartography service. Marker colors
+and stored positions are not changed.
+
 ## Glass sign-in (1.1.31)
 
 The black sign-in page uses the same layered glass as the map, restrained
