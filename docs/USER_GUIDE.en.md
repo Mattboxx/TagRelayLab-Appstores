@@ -73,6 +73,9 @@ imagery or a new provider; marker colors and stored positions are unchanged.
 On mobile, the corner list button opens the device sheet; its handle expands it and
 the chevron closes it. Selecting a device keeps its marker in the visible map
 area above the controls. Location permission for **Show my position** is optional.
+Pulling the grip down moves the whole sheet rather than shrinking its contents.
+A short pull returns it to place; a deliberate pull/flick dismisses it and then
+reveals the corner reopen button.
 
 At the bottom of the panel, a discreet **Support on Ko-fi** link opens the
 donation page directly if you wish to support the project. It is optional and

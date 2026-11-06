@@ -65,6 +65,9 @@ semplificato e conserva la scelta nel browser tra sessioni. Da mobile il tasto e
 la lista, la maniglia permette di espanderla e la freccia di richiuderla. Il
 centraggio mantiene il punto nella mappa visibile sopra i controlli. Il permesso
 di geolocalizzazione per **Mostra la mia posizione** è facoltativo.
+Trascinando la maniglia verso il basso si muove tutto il pannello, senza
+schiacciare il contenuto. Un gesto breve torna in posizione; un trascinamento
+deciso o rapido chiude l'elenco e poi fa riapparire il pulsante nell'angolo.
 
 La barra mantiene **Altro (tre puntini), Amministrazione, Posizione e Aggiorna**
 in quest'ordine; Amministrazione è visibile soltanto agli amministratori.

@@ -12,6 +12,10 @@
 - Animate panel entry and exit, including rapid reopen while closing. Outside
   presses and Escape close the panel; keyboard focus returns appropriately.
   Keep the existing administration workspace header and access controls.
+- Correct mobile device-drawer dismissal: slide the full sheet downward from
+  its current position without fading, shrinking its content or resetting its
+  height during the exit. Support a deliberate flick, snap short pulls back,
+  handle cancelled touches and reveal the corner reopen button only afterwards.
 - Add **Standard, Light, Dark and System** color styles to quick controls and
   Account → Map preferences. Save the choice per account in the current browser;
   System follows the browser color-scheme preference. Logout resets visible
