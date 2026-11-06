@@ -2,6 +2,14 @@
 
 Older screenshots retain the earlier Find My Web / Find My Hub branding; the illustrated workflows still apply.
 
+## Glass sign-in (1.1.31)
+
+The black sign-in page uses the same layered glass as the map, restrained
+sky-blue reflections and a decorative street pattern, without live positions
+or the circular backdrop. Labels and controls remain readable.
+
+![Glass sign-in, using an isolated preview account](35-login-glass.jpg)
+
 ## Readable glass and responsive navigation (1.1.30)
 
 Real captures from the release candidate, using only synthetic accounts and

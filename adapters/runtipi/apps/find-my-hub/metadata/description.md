@@ -7,6 +7,8 @@ replace the built-in map or make external integrations mandatory.
 
 ![Synthetic-data map](https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/02-map.jpg)
 
+![Black glass sign-in](https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/35-login-glass.jpg)
+
 [English illustrated guide](https://github.com/Mattboxx/TagRelayLab-Appstores/blob/main/docs/USER_GUIDE.en.md) ·
 [Guida italiana](https://github.com/Mattboxx/TagRelayLab-Appstores/blob/main/docs/USER_GUIDE.it.md) ·
 [Full gallery](https://github.com/Mattboxx/TagRelayLab-Appstores/blob/main/docs/screenshots/README.md).

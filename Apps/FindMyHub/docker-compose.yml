@@ -4,7 +4,7 @@ services:
   web:
     container_name: find-my-hub-web
     hostname: find-my-hub-web
-    image: ghcr.io/mattboxx/find-my-web:1.1.30
+    image: ghcr.io/mattboxx/find-my-web:1.1.31
     restart: unless-stopped
     ports:
       - target: 8000
@@ -44,7 +44,7 @@ services:
   apple-provider:
     container_name: find-my-hub-apple-provider
     hostname: apple-provider
-    image: ghcr.io/mattboxx/find-my-apple-provider:1.1.30
+    image: ghcr.io/mattboxx/find-my-apple-provider:1.1.31
     restart: unless-stopped
     environment:
       APPLE_SETUP_PORT: "6177"
@@ -65,7 +65,7 @@ services:
   google-provider:
     container_name: find-my-hub-google-provider
     hostname: google-provider
-    image: ghcr.io/mattboxx/find-my-google-provider:1.1.30
+    image: ghcr.io/mattboxx/find-my-google-provider:1.1.31
     restart: unless-stopped
     environment:
       AUTH_TOKEN: ${GOOGLE_TOKEN:-}
@@ -100,9 +100,10 @@ x-casaos:
   category: Home
   author: Mattboxx
   developer: Mattboxx
-  icon: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/Apps/FindMyHub/icon.svg?v=1.1.30
+  icon: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/Apps/FindMyHub/icon.svg?v=1.1.31
   thumbnail: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/30-map-glass.png
   screenshot_link:
+    - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/35-login-glass.jpg
     - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/30-map-glass.png
     - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/31-accounts-mobile.png
     - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/32-history-mobile.png
@@ -199,11 +200,11 @@ x-casaos:
   port_map: "8125"
   scheme: http
   index: /
-  version: "1.1.30"
-  update_at: "2026-11-05"
+  version: "1.1.31"
+  update_at: "2026-11-06"
   release_notes:
-    en_US: "Consistent neutral settings, local SVG action icons, readable device key labels and refreshed application/store icons. Map refreshes reuse unchanged markers and avoid repeated recentering. Refined mobile drawer grip and close control. Reports, identities, volumes, firmware and library version are preserved. Reload browser tabs."
-    it_IT: "Impostazioni neutre coerenti, icone SVG locali, etichette leggibili delle chiavi e nuova icona app/store. La mappa riusa i punti invariati senza ricentrarsi a ogni aggiornamento. Migliorate maniglia e chiusura del pannello mobile. Report, identità, volumi, firmware e versione libreria invariati. Ricarica le schede."
+    en_US: "Black glass sign-in without the circular backdrop, complete mobile settings for original members of unified views, stationary account/user dialogs with inner scrolling, icon-only Setup and a layered unified-view icon. Reports, identities, volumes, firmware and library version are preserved. Reload browser tabs."
+    it_IT: "Accesso in vetro nero senza cerchio sullo sfondo, impostazioni mobili complete dei membri delle viste unificate, popup account/utenti fermi con scorrimento interno, Setup a sola icona e nuovo simbolo a livelli per la vista unificata. Report, identità, volumi, firmware e versione libreria invariati. Ricarica le schede."
   website: https://github.com/Mattboxx/TagRelayLab-Appstores
   repo: https://github.com/Mattboxx/TagRelayLab-Appstores
   support: https://github.com/Mattboxx/TagRelayLab-Appstores/issues

@@ -174,6 +174,10 @@ open firmware tools, manage identities or delete the device. Key fields stay
 locked until the pencil is pressed. Only administrators can assign owners.
 Deletion and key rotation are different actions; read their confirmation text.
 
+For a unified view, the list's settings button opens its first original member.
+The selector at the top switches between every original device and the unified
+view itself. On phones, scroll inside the settings panel to reach all sections.
+
 ![Original device settings inside a unified view](screenshots/05-device-settings.jpg)
 
 The eye hides a device from the map without deleting it. **Show hidden** controls
@@ -351,7 +355,7 @@ For defaults, algorithm limits, API pagination and migration details, read
 ## 13. Update safely and troubleshoot by layer
 
 Use the store update or pull the versioned Compose images and recreate services,
-keeping existing data volumes. `1.1.30` is reproducible; `latest` follows the
+keeping existing data volumes. `1.1.31` is reproducible; `latest` follows the
 latest released image. The store version, image tags and every architecture
 manifest must agree. Do not reinstall/delete data simply because a store has an
 outdated cache. Take backups before changing your installation.
