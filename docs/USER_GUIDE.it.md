@@ -114,8 +114,11 @@ container stesso, non il NAS. In alternativa usa IP LAN e porta pubblicata.
   opzionale `6177` consente l'autenticazione SMS 2FA dal web. Leggi i prerequisiti
   dell'account nel README d'installazione. Rimuovere la sessione Apple non elimina
   dispositivi o storico del web.
-- Google: sidecar Find Hub, normalmente `5500`. Genera `Auth/secrets.json`
-  con il login desktop upstream e caricalo tramite il controller opzionale `5501`.
+- Google: sidecar Find Hub, normalmente `5500`. Su Windows apri **Setup →
+  Account Google → Scarica assistente Windows**, estrai tutto e fai doppio
+  clic su `Start Google Setup.cmd`. Accedi solo nella finestra Google, poi
+  carica il `secrets.json` generato. Sugli altri sistemi usa la guida upstream.
+  L’importazione usa il controller opzionale `5501`.
   Il token dell'API protegge il servizio locale: **non è** una credenziale Google.
 - Salva i collegamenti e usa **Verifica connessioni**. I provider esterni standard
   continuano a fornire dispositivi e posizioni anche se non supportano i controller
@@ -382,7 +385,7 @@ Per valori predefiniti, limiti, paginazione API e migrazione, leggi
 ## 13. Aggiornamenti e diagnosi
 
 Aggiorna dallo store oppure scarica le immagini Compose versionate e ricrea i
-servizi mantenendo i volumi. `1.1.37` è riproducibile; `latest` segue l'ultima
+servizi mantenendo i volumi. `1.1.38` è riproducibile; `latest` segue l'ultima
 release. Versione store, tag immagini e manifest delle architetture devono
 coincidere. Non reinstallare/cancellare i dati per una cache dello store obsoleta.
 Esegui backup prima di modificare l'installazione.

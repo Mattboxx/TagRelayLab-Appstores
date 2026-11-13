@@ -113,8 +113,11 @@ container, not your NAS. A published LAN address/port is an alternative.
   installation README's account prerequisites before onboarding. Reauthentication
   removes the provider session, not devices or saved web history.
 - Google reports: Google Find Hub sidecar, normally port `5500`.
-  Generate `Auth/secrets.json` with the upstream desktop login flow, then upload
-  it through the optional controller on `5501`. A Google API token protects the
+  On Windows, use **Setup → Google account → Download Windows assistant**,
+  extract the ZIP, and double-click `Start Google Setup.cmd`. Sign in only
+  in the Google window. Then upload the generated `secrets.json` in Setup.
+  On other desktop systems, use the upstream guide. The optional controller
+  on `5501` handles the import. A Google API token protects the
   local HTTP service; it is **not** the Google account credential.
 - **Save provider connections**, then **Test connections**. With standard
   external providers, optional onboarding/registration controls may be unavailable
@@ -381,7 +384,7 @@ For defaults, algorithm limits, API pagination and migration details, read
 ## 13. Update safely and troubleshoot by layer
 
 Use the store update or pull the versioned Compose images and recreate services,
-keeping existing data volumes. `1.1.37` is reproducible; `latest` follows the
+keeping existing data volumes. `1.1.38` is reproducible; `latest` follows the
 latest released image. The store version, image tags and every architecture
 manifest must agree. Do not reinstall/delete data simply because a store has an
 outdated cache. Take backups before changing your installation.
