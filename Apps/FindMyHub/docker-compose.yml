@@ -4,7 +4,7 @@ services:
   web:
     container_name: find-my-hub-web
     hostname: find-my-hub-web
-    image: ghcr.io/mattboxx/find-my-web:1.1.36
+    image: ghcr.io/mattboxx/find-my-web:1.1.37
     restart: unless-stopped
     ports:
       - target: 8000
@@ -44,7 +44,7 @@ services:
   apple-provider:
     container_name: find-my-hub-apple-provider
     hostname: apple-provider
-    image: ghcr.io/mattboxx/find-my-apple-provider:1.1.36
+    image: ghcr.io/mattboxx/find-my-apple-provider:1.1.37
     restart: unless-stopped
     environment:
       APPLE_SETUP_PORT: "6177"
@@ -65,7 +65,7 @@ services:
   google-provider:
     container_name: find-my-hub-google-provider
     hostname: google-provider
-    image: ghcr.io/mattboxx/find-my-google-provider:1.1.36
+    image: ghcr.io/mattboxx/find-my-google-provider:1.1.37
     restart: unless-stopped
     environment:
       AUTH_TOKEN: ${GOOGLE_TOKEN:-}
@@ -100,7 +100,7 @@ x-casaos:
   category: Home
   author: Mattboxx
   developer: Mattboxx
-  icon: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/Apps/FindMyHub/icon.svg?v=1.1.36
+  icon: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/Apps/FindMyHub/icon.svg?v=1.1.37
   thumbnail: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/30-map-glass.png
   screenshot_link:
     - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/38-history-first.jpg
@@ -204,11 +204,11 @@ x-casaos:
   port_map: "8125"
   scheme: http
   index: /
-  version: "1.1.36"
+  version: "1.1.37"
   update_at: "2026-11-13"
   release_notes:
-    en_US: "Manual refresh runs in the background with retryable status checks. Apple connection testing explains successful responses with zero reports. Includes the existing Google provider fix."
-    it_IT: "Aggiornamento manuale in background con verifiche ripetibili. Il test Apple distingue una richiesta riuscita senza report. Include la correzione Google già pubblicata."
+    en_US: "Refresh shows the current phase and elapsed time without a persistent spinner. The map can load before the administrator account list. Existing Apple and Google fixes are retained."
+    it_IT: "Aggiorna mostra la fase e il tempo trascorso senza uno spinner continuo. La mappa si carica senza attendere la lista utenti. Le correzioni Apple e Google restano incluse."
   website: https://github.com/Mattboxx/TagRelayLab-Appstores
   repo: https://github.com/Mattboxx/TagRelayLab-Appstores
   support: https://github.com/Mattboxx/TagRelayLab-Appstores/issues
