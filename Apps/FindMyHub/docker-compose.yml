@@ -4,7 +4,7 @@ services:
   web:
     container_name: find-my-hub-web
     hostname: find-my-hub-web
-    image: ghcr.io/mattboxx/find-my-web:1.1.35
+    image: ghcr.io/mattboxx/find-my-web:1.1.36
     restart: unless-stopped
     ports:
       - target: 8000
@@ -44,7 +44,7 @@ services:
   apple-provider:
     container_name: find-my-hub-apple-provider
     hostname: apple-provider
-    image: ghcr.io/mattboxx/find-my-apple-provider:1.1.35
+    image: ghcr.io/mattboxx/find-my-apple-provider:1.1.36
     restart: unless-stopped
     environment:
       APPLE_SETUP_PORT: "6177"
@@ -65,7 +65,7 @@ services:
   google-provider:
     container_name: find-my-hub-google-provider
     hostname: google-provider
-    image: ghcr.io/mattboxx/find-my-google-provider:1.1.35
+    image: ghcr.io/mattboxx/find-my-google-provider:1.1.36
     restart: unless-stopped
     environment:
       AUTH_TOKEN: ${GOOGLE_TOKEN:-}
@@ -100,7 +100,7 @@ x-casaos:
   category: Home
   author: Mattboxx
   developer: Mattboxx
-  icon: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/Apps/FindMyHub/icon.svg?v=1.1.35
+  icon: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/Apps/FindMyHub/icon.svg?v=1.1.36
   thumbnail: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/30-map-glass.png
   screenshot_link:
     - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/38-history-first.jpg
@@ -204,11 +204,11 @@ x-casaos:
   port_map: "8125"
   scheme: http
   index: /
-  version: "1.1.35"
+  version: "1.1.36"
   update_at: "2026-11-13"
   release_notes:
-    en_US: "Fixes a Google provider listener crash when Web Push headers carry additional encryption parameters. No account changes, tracker re-registration or firmware flashing are needed."
-    it_IT: "Corregge il blocco del provider Google quando gli header Web Push contengono parametri di cifratura aggiuntivi. Account, tracker e firmware restano invariati."
+    en_US: "Manual refresh runs in the background with retryable status checks. Apple connection testing explains successful responses with zero reports. Includes the existing Google provider fix."
+    it_IT: "Aggiornamento manuale in background con verifiche ripetibili. Il test Apple distingue una richiesta riuscita senza report. Include la correzione Google già pubblicata."
   website: https://github.com/Mattboxx/TagRelayLab-Appstores
   repo: https://github.com/Mattboxx/TagRelayLab-Appstores
   support: https://github.com/Mattboxx/TagRelayLab-Appstores/issues
