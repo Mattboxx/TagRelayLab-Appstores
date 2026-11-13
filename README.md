@@ -159,7 +159,7 @@ For an existing modular deployment or an explicit legacy installation:
 
 ```sh
 mkdir tracking-modular && cd tracking-modular
-curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/v1.1.33/compose.yaml -o compose.yaml
+curl -fsSL https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/v1.1.35/compose.yaml -o compose.yaml
 docker compose up -d
 ```
 
@@ -179,7 +179,7 @@ https://cdn.jsdelivr.net/gh/Mattboxx/TagRelayLab-Appstores@gh-pages/store.json
 Anisette is a separate upstream Apple authentication helper in both layouts.
 Fewer containers do not automatically mean lower memory usage or less account setup.
 
-The bundle is `ghcr.io/mattboxx/tagrelaylab-server`; tags `1.1.33`,
+The bundle is `ghcr.io/mattboxx/tagrelaylab-server`; tags `1.1.35`,
 `stable` and `latest` are available. The legacy name `find-my-hub` stays compatible.
 `find-my-web` is **web-only**, not a bundle alias. Keep the current data mounts,
 ports and Compose project name when changing only an image reference.

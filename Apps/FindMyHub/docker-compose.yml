@@ -4,7 +4,7 @@ services:
   web:
     container_name: find-my-hub-web
     hostname: find-my-hub-web
-    image: ghcr.io/mattboxx/find-my-web:1.1.33
+    image: ghcr.io/mattboxx/find-my-web:1.1.35
     restart: unless-stopped
     ports:
       - target: 8000
@@ -44,7 +44,7 @@ services:
   apple-provider:
     container_name: find-my-hub-apple-provider
     hostname: apple-provider
-    image: ghcr.io/mattboxx/find-my-apple-provider:1.1.33
+    image: ghcr.io/mattboxx/find-my-apple-provider:1.1.35
     restart: unless-stopped
     environment:
       APPLE_SETUP_PORT: "6177"
@@ -65,7 +65,7 @@ services:
   google-provider:
     container_name: find-my-hub-google-provider
     hostname: google-provider
-    image: ghcr.io/mattboxx/find-my-google-provider:1.1.33
+    image: ghcr.io/mattboxx/find-my-google-provider:1.1.35
     restart: unless-stopped
     environment:
       AUTH_TOKEN: ${GOOGLE_TOKEN:-}
@@ -100,7 +100,7 @@ x-casaos:
   category: Home
   author: Mattboxx
   developer: Mattboxx
-  icon: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/Apps/FindMyHub/icon.svg?v=1.1.33
+  icon: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/Apps/FindMyHub/icon.svg?v=1.1.35
   thumbnail: https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/30-map-glass.png
   screenshot_link:
     - https://raw.githubusercontent.com/Mattboxx/TagRelayLab-Appstores/main/docs/screenshots/38-history-first.jpg
@@ -204,11 +204,11 @@ x-casaos:
   port_map: "8125"
   scheme: http
   index: /
-  version: "1.1.33"
-  update_at: "2026-11-06"
+  version: "1.1.35"
+  update_at: "2026-11-13"
   release_notes:
-    en_US: "History-first device details with a unified/original tracker selector. Default source and map appearance live only in More. Square tablet reorder controls and a frame-bounded, captured-pointer mobile drawer without competing entry animations. Existing data, identities, firmware and saved preferences are preserved. Reload browser tabs."
-    it_IT: "Dettagli dispositivo con storico iniziale e selettore vista unificata/singolo tracker. Sorgente predefinita e aspetto mappa soltanto in Altro. Riordino con proporzioni corrette su tablet ed elenco mobile aggiornato per fotogramma, senza animazioni di ingresso concorrenti. Dati, identità, firmware e preferenze salvate invariati. Ricarica le schede."
+    en_US: "Fixes a Google provider listener crash when Web Push headers carry additional encryption parameters. No account changes, tracker re-registration or firmware flashing are needed."
+    it_IT: "Corregge il blocco del provider Google quando gli header Web Push contengono parametri di cifratura aggiuntivi. Account, tracker e firmware restano invariati."
   website: https://github.com/Mattboxx/TagRelayLab-Appstores
   repo: https://github.com/Mattboxx/TagRelayLab-Appstores
   support: https://github.com/Mattboxx/TagRelayLab-Appstores/issues
